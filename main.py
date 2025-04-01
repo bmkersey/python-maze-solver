@@ -1,10 +1,12 @@
 from Window import Window
 from Point import Point
 from Line import Line
+from Cell import Cell
 
 win = Window(800,600)
-start_point = Point(20,20)
-end_point = Point(600,20)
-full_line = Line(start_point, end_point)
-win.draw_line(full_line, "black")
+cell = Cell(Point(20,20),Point(40,40), win)
+cell2 = Cell(Point(40,20),Point(60,40), win)
+cell.draw_move(cell2)
+cell.draw()
+cell2.draw()
 win.wait_for_close()
