@@ -2,11 +2,9 @@ from Window import Window
 from Point import Point
 from Line import Line
 from Cell import Cell
+from Maze import Maze
 
 win = Window(800,600)
-cell = Cell(Point(20,20),Point(40,40), win)
-cell2 = Cell(Point(40,20),Point(60,40), win)
-cell.draw_move(cell2)
-cell.draw()
-cell2.draw()
+starting_point = Point(100,100)
+maze = Maze(starting_point,10,10,20,20,win)
 win.wait_for_close()
