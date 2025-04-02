@@ -35,7 +35,7 @@
   
   ## Tests 
 
-  Run the test suite by type [python3 ./tests.py] in the command line while in the root of the project.
+  Run the test suite by typing [python3 ./tests.py] in the command line while in the root of the project.
   
   ## Questions
   Questions? Comments? Concerns? Feel free to reach out!  
